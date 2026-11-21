@@ -1,4 +1,4 @@
 # PSM2
 Sistemas Móviles 2
 
-Terminé el menú principal y un cutscene introductorio y sus respectivos scripts (la ctuscene lleva de nuevo al menú pero se puede cambiar fácil) - K
+Cuando hagas un nuevo cambio crea otra rama de main para evitar que se pierda información (ya me pasó xD)
