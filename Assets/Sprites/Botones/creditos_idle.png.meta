@@ -141,9 +141,9 @@ TextureImporter:
       name: creditos_idle_1
       rect:
         serializedVersion: 2
-        x: 514
+        x: 551
         y: 0
-        width: 1065
+        width: 1017
         height: 255
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

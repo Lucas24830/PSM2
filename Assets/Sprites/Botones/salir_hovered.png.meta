@@ -119,12 +119,12 @@ TextureImporter:
       name: salir_hovered_0
       rect:
         serializedVersion: 2
-        x: 489
-        y: 230
-        width: 1076
-        height: 257
+        x: 553
+        y: 247
+        width: 1012
+        height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -146,7 +146,7 @@ TextureImporter:
         width: 23
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2590da188fc92634a8f0c4624d8191f8
     internalID: 0
     vertices: []
     indices: 
