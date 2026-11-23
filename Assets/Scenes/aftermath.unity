@@ -840,10 +840,10 @@ RectTransform:
   - {fileID: 1522668958}
   m_Father: {fileID: 1007435988}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 738, y: -448}
-  m_SizeDelta: {x: 363.01, y: 97.67}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -280, y: 158}
+  m_SizeDelta: {x: 363.01, y: 97.66998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &633848932
 MonoBehaviour:
@@ -1178,9 +1178,9 @@ RectTransform:
   - {fileID: 633848931}
   m_Father: {fileID: 116460891}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 64, y: 61}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 14, y: 11}
   m_SizeDelta: {x: 2035.21, y: 1211.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1007435989
@@ -2151,9 +2151,9 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
