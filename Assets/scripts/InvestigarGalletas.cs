@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
@@ -88,6 +87,8 @@ public class InvestigarGalletas : MonoBehaviour
         ampliada = true;
         spriteRenderer.sortingOrder = ordenAmpliado;
 
+        ControlPruebas.Abrir(this);
+
         Vector3 posicionFinal = Camera.main.transform.position;
         posicionFinal.z = transform.position.z;
 
@@ -143,5 +144,7 @@ public class InvestigarGalletas : MonoBehaviour
 
         ampliada = false;
         animando = false;
+
+        ControlPruebas.Cerrar(this);
     }
 }
