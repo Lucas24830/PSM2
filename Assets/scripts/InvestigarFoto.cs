@@ -169,6 +169,9 @@ public class InvestigarFoto : MonoBehaviour
         // Se pone por encima de los demas objetos
         spriteRenderer.sortingOrder = ordenAmpliado;
 
+        // La pantalla se queda quieta y esta prueba cuenta como recogida
+        ControlPruebas.Abrir(this);
+
         posicionAmpliada = Camera.main.transform.position;
         posicionAmpliada.z = transform.position.z;
 
@@ -227,5 +230,7 @@ public class InvestigarFoto : MonoBehaviour
 
         ampliada = false;
         animando = false;
+
+        ControlPruebas.Cerrar(this);
     }
 }

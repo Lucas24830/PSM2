@@ -54,8 +54,7 @@ public class DialogoRPG : MonoBehaviour
 
         if (indice >= dialogos.Length)
         {
-            dialogoTerminado = true;
-            //texto.text = "Toca la pantalla para continuar...";
+            SceneManager.LoadScene(nombreEscena);
             return;
         }
 

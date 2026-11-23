@@ -68,11 +68,19 @@ public class CamaraGiro : MonoBehaviour
             return;
         }
 
+        // Con una prueba ampliada la camara no se mueve
+        if (ControlPruebas.PantallaQuieta)
+            return;
+
         AplicarPosicion();
     }
 
     void UsarGiroscopio(UnityEngine.InputSystem.Gyroscope giroscopio)
     {
+        // Pantalla quieta: se ignora el giro mientras hay una prueba ampliada
+        if (ControlPruebas.PantallaQuieta)
+            return;
+
         Vector3 velocidad = giroscopio.angularVelocity.ReadValue();
 
         float gradosPorSegundo = Componente(velocidad) * Mathf.Rad2Deg;
@@ -117,6 +125,15 @@ public class CamaraGiro : MonoBehaviour
         }
 
         float angulo = 2f * Mathf.Atan2(parteEje, delta.w) * Mathf.Rad2Deg;
+
+        // Pantalla quieta: se sigue leyendo el sensor pero no se acumula,
+        // asi al soltar la prueba la camara continua desde donde se quedo
+        // y no pega un brinco hacia donde quedo el celular.
+        if (ControlPruebas.PantallaQuieta)
+        {
+            anguloAnterior = angulo;
+            return;
+        }
 
         // Acumular sin brincos al pasar de 180 a -180
         anguloAcumulado += Mathf.DeltaAngle(anguloAnterior, angulo);
